@@ -21,7 +21,7 @@ export default function InfoSection() {
                 <div>
                 {
                     isEditing ? 
-                    <input value={fullName} onChange={(e) => setFullName(e.target.value)}/> :
+                    <input id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)}/> :
                     <h1>{fullName}</h1>
                 }
                 {
@@ -64,13 +64,7 @@ export default function InfoSection() {
 }
 
 
-function isEditing() {
-    console.log("You're now editing");
-    
-}
-
-
- // Conditional for which button to use?
+// Conditional for which button to use?
         // if the button is toggled to "edit" then editButton()
         // else submitButton
 

@@ -1,4 +1,19 @@
 .sectLvl1 {
     border: 1px solid red;
     display: flex;
+    font-family: Arial, system-ui, Helvetica, sans-serif;
   }
+
+#fullName{
+  margin: 0;
+  padding: 0px;
+  width: 400px;
+  height: 56px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
