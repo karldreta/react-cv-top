@@ -4,8 +4,11 @@ import "../styles/InfoSection.css"
 export default function InfoSection() {
     const [isEditing, setIsEditing] = useState(false);
     const [fullName, setFullName] = useState("Karl James Reta");
-    const [contactNumber, setContactNumber] = useState("+63 961-923-6505")
     const [title, setTitle] = useState("Fullstack Developer")
+    const [contactNumber, setContactNumber] = useState("+63 961-923-6505")
+    const [emailAdd, setEmailAdd] = useState("karldreta@gmail.com")
+    const [githubProfile, setGitHubProfile] = useState("github.com/karldreta")
+    const [location, setLocation] = useState("Philippines")
 
 
     function handleButtonClick() {
@@ -34,6 +37,21 @@ export default function InfoSection() {
                             isEditing ?
                             <input value={contactNumber} onChange={(e) => setContactNumber(e.target.value)}/> :
                             <li>{contactNumber}</li>
+                        }
+                        {
+                            isEditing ?
+                            <input value={emailAdd} onChange={(e) => setEmailAdd(e.target.value)}/> :
+                            <li>{emailAdd}</li>
+                        }
+                        {
+                            isEditing ?
+                            <input value={githubProfile} onChange={(e) => setGitHubProfile(e.target.value)}/> :
+                            <li>{githubProfile}</li>
+                        }
+                        {
+                            isEditing ?
+                            <input value={location} onChange={(e) => setLocation(e.target.value)} /> :
+                            <li>{location}</li>
                         }
                     </ul>
                 </div>
