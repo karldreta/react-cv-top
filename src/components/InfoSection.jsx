@@ -19,17 +19,17 @@ export default function InfoSection() {
         <>
             <section className="sectLvl1">
                 <div>
-                {
-                    isEditing ? 
-                    <input id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)}/> :
+                {isEditing ? (
+                    <>
+                    <input id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)}/> 
+                    <input id="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+                    </>
+                    ) : (
+                    <>
                     <h1>{fullName}</h1>
-                }
-                {
-                     isEditing ? 
-                     <input value={title} onChange={(e) => setTitle(e.target.value)}/> :
-                     <h2>{title}</h2>
-                }
-
+                    <h2>{title}</h2>
+                    </>
+                    )}
                 </div>
                 <div>
                     <ul>

@@ -1,19 +1,51 @@
 .sectLvl1 {
-    border: 1px solid red;
+    border: 1px solid #ff0000;
+    box-sizing: border-box;
     display: flex;
     font-family: Arial, system-ui, Helvetica, sans-serif;
+    height: 20vh;
   }
 
-#fullName{
+.sectLvl1 > div {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+input {
+  /* border: 1px solid blue; */
+  border: none;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  background-color: white;
+  outline: none;
+  font-style: italic;
+}
+
+#fullName, h1{
+  margin: 20px 20px 5px 40px;
+  padding: 0;
   width: 400px;
   height: 56px;
   font-size: 3rem;
   font-weight: 700;
 }
 
-ul {
+#title, h2 {
+  margin: 5px 20px 5px 40px;
+  padding: 0;
+  width: 400px;
+  height: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+div > ul {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
