@@ -3,8 +3,17 @@ import "../styles/InfoSection.css"
 
 export default function InfoSection() {
     const [isEditing, setIsEditing] = useState(false);
-    const [fullName, setFullName] = useState("Karl James Reta");
-    const [title, setTitle] = useState("Fullstack Developer")
+    // const [fullName, setFullName] = useState("Karl James Reta");
+    // const [title, setTitle] = useState("Fullstack Developer")
+    const [profile, setProfile] = useState({
+        fullName: "Karl James Reta",
+        title: "FullStack Developer",
+    })
+
+    function updateField(key, value) {
+        setProfile(prev => ({...prev, [key]: value}));
+      }
+
     const [contactNumber, setContactNumber] = useState("+63 961-923-6505")
     const [emailAdd, setEmailAdd] = useState("karldreta@gmail.com")
     const [githubProfile, setGitHubProfile] = useState("github.com/karldreta")
@@ -24,13 +33,13 @@ export default function InfoSection() {
                 <div>
                 {isEditing ? (
                     <>
-                    <input id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)}/> 
-                    <input id="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+                    <input id="fullName" value={profile.fullName} onChange={(e) => updateField("fullName", e.target.value)}/> 
+                    <input id="title" value={profile.title} onChange={(e) => updateField("title", e.target.value)}/>
                     </>
                     ) : (
                     <>
-                    <h1>{fullName}</h1>
-                    <h2>{title}</h2>
+                    <h1>{profile.fullName}</h1>
+                    <h2>{profile.title}</h2>
                     </>
                     )}
                 </div>
