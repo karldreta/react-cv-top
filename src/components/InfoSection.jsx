@@ -3,21 +3,18 @@ import "../styles/InfoSection.css"
 
 export default function InfoSection() {
     const [isEditing, setIsEditing] = useState(false);
-    // const [fullName, setFullName] = useState("Karl James Reta");
-    // const [title, setTitle] = useState("Fullstack Developer")
     const [profile, setProfile] = useState({
         fullName: "Karl James Reta",
         title: "FullStack Developer",
+        contactNum: "+63 961-923-6505",
+        emailAdd: "karldreta@gmail.com",
+        ghProfile: "github.com/karldreta",
+        location: "Philippines"
     })
 
     function updateField(key, value) {
         setProfile(prev => ({...prev, [key]: value}));
       }
-
-    const [contactNumber, setContactNumber] = useState("+63 961-923-6505")
-    const [emailAdd, setEmailAdd] = useState("karldreta@gmail.com")
-    const [githubProfile, setGitHubProfile] = useState("github.com/karldreta")
-    const [location, setLocation] = useState("Philippines")
 
 
     function handleButtonClick() {
@@ -48,30 +45,30 @@ export default function InfoSection() {
                         {
                             isEditing ?
                             <li> 
-                                <input value={contactNumber} onChange={(e) => setContactNumber(e.target.value)}/>
+                                <input value={profile.contactNum} onChange={(e) => updateField("contactNum", e.target.value)}/>
                             </li> :
-                            <li>{contactNumber}</li>
+                            <li>{profile.contactNum}</li>
                         }
                         {
                             isEditing ?
                             <li>
-                                <input value={emailAdd} onChange={(e) => setEmailAdd(e.target.value)}/>
+                                <input value={profile.emailAdd} onChange={(e) => updateField("emailAdd", e.target.value)}/>
                             </li> :
-                            <li>{emailAdd}</li>
+                            <li>{profile.emailAdd}</li>
                         }
                         {
                             isEditing ?
                             <li>
-                                <input value={githubProfile} onChange={(e) => setGitHubProfile(e.target.value)}/> 
+                                <input value={profile.ghProfile} onChange={(e) => updateField("ghProfile", e.target.value)}/> 
                             </li>:
-                            <li>{githubProfile}</li>
+                            <li>{profile.ghProfile}</li>
                         }
                         {
                             isEditing ?
                             <li>
-                                <input value={location} onChange={(e) => setLocation(e.target.value)} />
+                                <input value={profile.location} onChange={(e) => updateField("location",e.target.value)} />
                             </li> :
-                            <li>{location}</li>
+                            <li>{profile.location}</li>
                         }
                     </ul>
                 </div>
@@ -79,29 +76,3 @@ export default function InfoSection() {
         </>
     )
 }
-
-
-// Conditional for which button to use?
-        // if the button is toggled to "edit" then editButton()
-        // else submitButton
-
-    // function editButton(e) {
-    //     console.log( e.target.nextElementSibling);
-
-    //     e.target.textContent = "Submit Edit";
-    //     const currentNameEl = e.target.nextElementSibling.querySelector('h1');
-    //     const editNameInput = document.createElement('input');
-    //     editNameInput.id = 'fullNameId'
-    //     editNameInput.value = currentNameEl.innerHTML;
-    //     currentNameEl.replaceWith(editNameInput);
-
-    //     return editNameInput.value;
-    // }
-
-    // function submitButton() {
-    //     console.log(editButton())
-    // }
-
-    // function handleFullName(value) {        
-    //     setFullName(value)
-    // }
