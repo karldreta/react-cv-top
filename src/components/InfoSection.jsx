@@ -17,6 +17,9 @@ export default function InfoSection() {
     
     return (
         <>
+            <button onClick={handleButtonClick}>
+            {isEditing ? "Submit Edit" : "Edit"}
+            </button>
             <section className="sectLvl1">
                 <div>
                 {isEditing ? (
@@ -35,30 +38,35 @@ export default function InfoSection() {
                     <ul>
                         {
                             isEditing ?
-                            <input value={contactNumber} onChange={(e) => setContactNumber(e.target.value)}/> :
+                            <li> 
+                                <input value={contactNumber} onChange={(e) => setContactNumber(e.target.value)}/>
+                            </li> :
                             <li>{contactNumber}</li>
                         }
                         {
                             isEditing ?
-                            <input value={emailAdd} onChange={(e) => setEmailAdd(e.target.value)}/> :
+                            <li>
+                                <input value={emailAdd} onChange={(e) => setEmailAdd(e.target.value)}/>
+                            </li> :
                             <li>{emailAdd}</li>
                         }
                         {
                             isEditing ?
-                            <input value={githubProfile} onChange={(e) => setGitHubProfile(e.target.value)}/> :
+                            <li>
+                                <input value={githubProfile} onChange={(e) => setGitHubProfile(e.target.value)}/> 
+                            </li>:
                             <li>{githubProfile}</li>
                         }
                         {
                             isEditing ?
-                            <input value={location} onChange={(e) => setLocation(e.target.value)} /> :
+                            <li>
+                                <input value={location} onChange={(e) => setLocation(e.target.value)} />
+                            </li> :
                             <li>{location}</li>
                         }
                     </ul>
                 </div>
             </section>
-            <button onClick={handleButtonClick}>
-                {isEditing ? "Submit Edit" : "Edit"}
-            </button>
         </>
     )
 }
