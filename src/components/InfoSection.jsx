@@ -12,15 +12,14 @@ export default function InfoSection() {
         location: "Philippines"
     })
 
-    function updateField(key, value) {
-        setProfile(prev => ({...prev, [key]: value}));
-      }
-
-
     function handleButtonClick() {
         setIsEditing(prev => !prev);
     }
     
+    function updateField(key, value) {
+        setProfile(prev => ({...prev, [key]: value}));
+      }
+      
     return (
         <>
             <button onClick={handleButtonClick}>
