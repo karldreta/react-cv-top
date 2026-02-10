@@ -46,6 +46,49 @@ export default function Experience() {
 
                 }
             ]
+        },
+        {
+            id: crypto.randomUUID(),
+            companyName: "VXI Global Solutions",
+            dateStart: "June 2022",
+            dateEnd: "Sep 2024",
+            description: "Sales & Service (Digital Satellite Service)",
+            tasks: [
+                {
+                    taskId: crypto.randomUUID(),
+                    task: "Handling inbound calls to address clients' billing concerns and providing solutions to reduce their monthly bills moving forward."
+                },
+                {
+                    taskId:crypto.randomUUID(),
+                    task: "Offering premium add-ons to clients for a rubost viewing experience."
+                },
+                {
+                    taskId:crypto.randomUUID(),
+                    task: "All successful reservations are considered sales."
+
+                }
+            ]
+        },
+        {
+            id: crypto.randomUUID(),
+            companyName: "GoGoGrandparent",
+            dateStart: "Sep 2024",
+            dateEnd: "Present",
+            description: "Transportation Service for Seniors",
+            tasks: [
+                {
+                    taskId: crypto.randomUUID(),
+                    task: "Handling inbound calls to assist elderly clients in booking a ride."
+                },
+                {
+                    taskId:crypto.randomUUID(),
+                    task: "Informing and registering first-time callers about the service."
+                },
+                {
+                    taskId:crypto.randomUUID(),
+                    task: "Providing feedback on the dashboard process and call flow scripts to management for better call procedure."
+                }
+            ]
         }
     ])
 
@@ -85,12 +128,14 @@ export default function Experience() {
                             <input value={job.dateStart + " - " + job.dateEnd} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
                             <br />
                             <input value={job.description} onChange={e => updateField(job.id, "description", e.target.value)}/>
+                            <br />
                             <ul>
                                 {job.tasks.map(task => <input 
                                 key={task.taskId} 
                                 value={task.task} 
                                 onChange={e => updateTaskField(job.id, task.taskId, e.target.value)}/>)}
                             </ul>
+                            <br />
                             </>
                         ) : 
                         (
