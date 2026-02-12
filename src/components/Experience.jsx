@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Experience.css";
 
 export default function Experience() {
     const [isEditing, setIsEditing] = useState(false);
@@ -125,7 +126,8 @@ export default function Experience() {
                         (
                             <>
                             <input value={job.companyName} onChange={e => updateField(job.id, "companyName", e.target.value)}/>
-                            <input value={job.dateStart + " - " + job.dateEnd} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
+                            <input value={job.dateStart} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
+                            <input value={job.dateEnd} onChange={e => updateField(job.id,"dateEnd", e.target.value)}/>
                             <br />
                             <input value={job.description} onChange={e => updateField(job.id, "description", e.target.value)}/>
                             <br />
