@@ -112,6 +112,35 @@ export default function Experience() {
         ))
     }
 
+    function addExperience() {
+        const expToAdd = [
+            {
+                id: crypto.randomUUID(),
+                companyName: "",
+                dateStart: "",
+                dateEnd: "",
+                description: "",
+                tasks: [ 
+                    {
+                        taskId: crypto.randomUUID(),
+                        task: "",
+                    },
+                    {
+                        taskId:crypto.randomUUID(),
+                        task: ""
+                    },
+                    {
+                        taskId:crypto.randomUUID(),
+                        task: ""
+    
+                    }
+                ]
+            },
+            ...workHistory
+        ]
+        setWorkHistory(expToAdd)
+    }
+
 
     return (
         <>
@@ -120,7 +149,7 @@ export default function Experience() {
             </button>
             <section className="sectLvl2">
                 <h3>Experience</h3>
-                <button className={isEditing ? "btn show" : "btn hide"}>Add Experience</button> {/* Should add another Div  */}
+                <button className={isEditing ? "btn show" : "btn hide"} onClick={addExperience}>Add Experience</button> {/* Should add another Div  */}
                 {workHistory.map(job => (
                     <div key={job.id}>
                         {isEditing ? 
