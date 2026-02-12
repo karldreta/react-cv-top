@@ -120,28 +120,30 @@ export default function Experience() {
             </button>
             <section className="sectLvl2">
                 <h3>Experience</h3>
+                <button className={isEditing ? "btn show" : "btn hide"}>Add Experience</button> {/* Should add another Div  */}
                 {workHistory.map(job => (
                     <div key={job.id}>
                         {isEditing ? 
-                        (
-                            <>
-                            <input value={job.companyName} onChange={e => updateField(job.id, "companyName", e.target.value)}/>
-                            <input value={job.dateStart} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
-                            <input value={job.dateEnd} onChange={e => updateField(job.id,"dateEnd", e.target.value)}/>
+                        (   
+                            <div className="jobDiv">
+                            <input placeholder={"Company Name"} value={job.companyName} onChange={e => updateField(job.id, "companyName", e.target.value)}/>
+                            <input placeholder={"Date Start"} value={job.dateStart} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
+                            <input placeholder={"Date End"} value={job.dateEnd} onChange={e => updateField(job.id,"dateEnd", e.target.value)}/>
                             <br />
-                            <input value={job.description} onChange={e => updateField(job.id, "description", e.target.value)}/>
+                            <input placeholder={"Job Description"} value={job.description} onChange={e => updateField(job.id, "description", e.target.value)}/>
                             <br />
                             <ul>
                                 {job.tasks.map(task => <input 
+                                placeholder={"Task"}
                                 key={task.taskId} 
                                 value={task.task} 
                                 onChange={e => updateTaskField(job.id, task.taskId, e.target.value)}/>)}
                             </ul>
                             <br />
-                            </>
+                            </div>
                         ) : 
                         (
-                            <>
+                            <div className="jobDiv">
                             <h4>{job.companyName + " | " + job.dateStart + " - " + job.dateEnd}</h4>
                             <h5>{job.description}</h5>
                             <h6>
@@ -149,7 +151,7 @@ export default function Experience() {
                                     {job.tasks.map(task => <li key={task.taskId}>{task.task}</li>)}
                                 </ul>
                             </h6>
-                            </>
+                            </div>
                         )
                         
                         }
