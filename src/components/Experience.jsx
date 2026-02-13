@@ -132,13 +132,18 @@ export default function Experience() {
                     {
                         taskId:crypto.randomUUID(),
                         task: ""
-    
                     }
                 ]
             },
             ...workHistory
         ]
         setWorkHistory(expToAdd)
+    }
+
+    function removeExperience (job) {
+        const expToRemove = workHistory.filter(work => job.id !== work.id );
+        console.log(expToRemove);
+        setWorkHistory(expToRemove);
     }
 
 
@@ -149,12 +154,13 @@ export default function Experience() {
             </button>
             <section className="sectLvl2">
                 <h3>Experience</h3>
-                <button className={isEditing ? "btn show" : "btn hide"} onClick={addExperience}>Add Experience</button> {/* Should add another Div  */}
+                <button className={isEditing ? "btn show" : "btn hide"} onClick={addExperience}>Add Experience</button> 
                 {workHistory.map(job => (
                     <div key={job.id}>
                         {isEditing ? 
                         (   
                             <div className="jobDiv">
+                            <button className={isEditing ? "btn show" : "btn hide"} onClick={() => removeExperience(job)}>Remove Experience</button>
                             <input placeholder={"Company Name"} value={job.companyName} onChange={e => updateField(job.id, "companyName", e.target.value)}/>
                             <input placeholder={"Date Start"} value={job.dateStart} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
                             <input placeholder={"Date End"} value={job.dateEnd} onChange={e => updateField(job.id,"dateEnd", e.target.value)}/>
