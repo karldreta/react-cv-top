@@ -97,7 +97,7 @@ export default function Experience() {
         setIsEditing(prev => !prev);
     }
 
-    function updateField(id, field, value) {
+    function updateWorkField(id, field, value) {
         setWorkHistory(prev => prev.map(job => job.id === id ? { ...job, [field]: value } : job));
     }
 
@@ -161,11 +161,11 @@ export default function Experience() {
                         (   
                             <div className="jobDiv">
                             <button className={isEditing ? "btn show" : "btn hide"} onClick={() => removeExperience(job)}>Remove Experience</button>
-                            <input placeholder={"Company Name"} value={job.companyName} onChange={e => updateField(job.id, "companyName", e.target.value)}/>
-                            <input placeholder={"Date Start"} value={job.dateStart} onChange={e => updateField(job.id,"dateStart", e.target.value)}/>
-                            <input placeholder={"Date End"} value={job.dateEnd} onChange={e => updateField(job.id,"dateEnd", e.target.value)}/>
+                            <input placeholder={"Company Name"} value={job.companyName} onChange={e => updateWorkField(job.id, "companyName", e.target.value)}/>
+                            <input placeholder={"Date Start"} value={job.dateStart} onChange={e => updateWorkField(job.id,"dateStart", e.target.value)}/>
+                            <input placeholder={"Date End"} value={job.dateEnd} onChange={e => updateWorkField(job.id,"dateEnd", e.target.value)}/>
                             <br />
-                            <input placeholder={"Job Description"} value={job.description} onChange={e => updateField(job.id, "description", e.target.value)}/>
+                            <input placeholder={"Job Description"} value={job.description} onChange={e => updateWorkField(job.id, "description", e.target.value)}/>
                             <br />
                             <ul>
                                 {job.tasks.map(task => <input 
