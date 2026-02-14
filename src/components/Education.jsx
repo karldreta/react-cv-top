@@ -29,8 +29,9 @@ export default function Education () {
                         {isEditing ? (
                             <div>
                             <input placeholder={"School"} value={edu.school} onChange={e => updateEducation(edu.id, "school", e.target.value)}/>
-                            <input placeholder={"Course"} value={edu.course} onChange={e => updateEducation(edu.id, "course", e.target.value)}/>
                             <input placeholder={"End Year"} value={edu.endYear} onChange={e => updateEducation(edu.id, "endYear", e.target.value)}/>
+                            <br />
+                            <input placeholder={"Course"} value={edu.course} onChange={e => updateEducation(edu.id, "course", e.target.value)}/>
                             </div>
                         )
                     : (
