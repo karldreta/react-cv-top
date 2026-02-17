@@ -7,6 +7,7 @@ import InfoSection from './components/InfoSection'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import SkillsSection from './components/Skills'
+import HobbiesSection from './components/Hobbies'
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,5 +16,6 @@ createRoot(document.getElementById('root')).render(
     <Experience/>
     <Education/>
     <SkillsSection/>
+    <HobbiesSection/>
   </StrictMode>,
 )

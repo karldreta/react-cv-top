@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-// It doesn't have to be an array of objects, it could just be a string separated/joined by ...spread/...rest, or join(,)
-
-
-
 
 export default function SkillsSection () {
     const [isEditing, setIsEditing] = useState(false);
