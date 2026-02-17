@@ -27,20 +27,18 @@ export default function Education () {
                 {education.map(edu => (
                     <div key={edu.id}>
                         {isEditing ? (
-                            <div>
-                            <input placeholder={"School"} value={edu.school} onChange={e => updateEducation(edu.id, "school", e.target.value)}/>
+                            <div>                            <input placeholder={"School"} value={edu.school} onChange={e => updateEducation(edu.id, "school", e.target.value)}/>
                             <input placeholder={"End Year"} value={edu.endYear} onChange={e => updateEducation(edu.id, "endYear", e.target.value)}/>
                             <br />
                             <input placeholder={"Course"} value={edu.course} onChange={e => updateEducation(edu.id, "course", e.target.value)}/>
                             </div>
                         )
                     : (
-                        <>
-                           <div>
-                                <h4>{edu.school + " | "} <span>{edu.endYear}</span> </h4>
-                                <h3>{edu.course}</h3>
-                           </div>
-                        </>
+                        <div>
+                            <h4>{edu.school + " | "} <span>{edu.endYear}</span> </h4>
+                            <h5>{edu.course}</h5>
+                            <hr />
+                        </div>
                     )
                     }
                     </div>
