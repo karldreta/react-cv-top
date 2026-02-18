@@ -1,17 +1,16 @@
 .sectLvl1 {
-    border: 1px solid #ff0000;
-    box-sizing: border-box;
-    display: flex;
-    font-family: Arial, system-ui, Helvetica, sans-serif;
-    height: 20vh;
-  }
+  border: 1px solid #ff0000;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Arial, system-ui, Helvetica, sans-serif;
+  height: 20vh;
+}
 
 .sectLvl1 > div {
   margin-right: 50px;
   display: flex;
   flex-direction: column;
 }
-
 
 input {
   /* border: 1px solid blue; */
@@ -23,7 +22,8 @@ input {
   font-style: italic;
 }
 
-#fullName, h1{
+#fullName,
+h1 {
   margin: 20px 20px 5px 40px;
   padding: 0;
   width: 400px;
@@ -32,7 +32,8 @@ input {
   font-weight: 700;
 }
 
-#title, h2 {
+#title,
+h2 {
   margin: 5px 20px 5px 40px;
   padding: 0;
   width: 400px;
@@ -40,7 +41,6 @@ input {
   font-size: 1rem;
   font-weight: 500;
 }
-
 
 div > ul {
   margin: 0;
