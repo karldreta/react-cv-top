@@ -154,13 +154,14 @@ export default function Experience() {
             </button>
             <section className="sectLvl2">
                 <h3>Experience</h3>
-                <button className={isEditing ? "btn show" : "btn hide"} onClick={addExperience}>Add Experience</button> 
+                <div className="experienceDiv">
+                <button className={isEditing ? "btn show add" : "btn hide"} onClick={addExperience}>Add an Experience</button> 
                 {workHistory.map(job => (
                     <div key={job.id}>
                         {isEditing ? 
                         (   
                             <div className="jobDiv">
-                            <button className={isEditing ? "btn show" : "btn hide"} onClick={() => removeExperience(job)}>Remove Experience</button>
+                            <button className={isEditing ? "btn show remove" : "btn hide"} onClick={() => removeExperience(job)}>Remove Experience</button>
                             <input placeholder={"Company Name"} value={job.companyName} onChange={e => updateWorkField(job.id, "companyName", e.target.value)}/>
                             <input placeholder={"Date Start"} value={job.dateStart} onChange={e => updateWorkField(job.id,"dateStart", e.target.value)}/>
                             <input placeholder={"Date End"} value={job.dateEnd} onChange={e => updateWorkField(job.id,"dateEnd", e.target.value)}/>
@@ -192,6 +193,7 @@ export default function Experience() {
                         }
                     </div>
                     ))}
+                </div>
             </section>
         </>
     )

@@ -2,6 +2,15 @@
     border: 1px solid #ff0000;
     flex-direction: column;
     font-family: Arial, system-ui, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectLvl2 > h3 {
+    margin-right: 40px;
+    font-size: 36px;
+
   }
 
 .jobDiv {
@@ -9,11 +18,45 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  width: 800px;
+  height: 200px;
+}
+
+.jobDiv h4 {
+  margin: 0px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.jobDiv h5 {
+  margin: 0px;
+  padding: 5px 10px;
+  font-size: 16px;
 }
 
 
-.btn {
-  justify-self: flex-end;
+.jobDiv ul {
+  margin: 0px 20px;
+  padding: 5px 10px;
+}
+
+.jobDiv ul li {
+  font-size: 12px;
+}
+
+.jobDiv button {
+  position: absolute;
+}
+
+.btn.show.add {
+  position: absolute;
+  top: 350px;
+  left: 130px;
+}
+
+.btn.show.remove {
+  position: absolute;
+  right: 125px;
 }
 
 .btn.show {
