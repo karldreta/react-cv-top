@@ -1,4 +1,5 @@
 .sectLvl2 {
+  position: relative;
     border: 1px solid #ff0000;
     flex-direction: column;
     font-family: Arial, system-ui, Helvetica, sans-serif;
@@ -89,13 +90,13 @@ input[placeholder="Task"] {
 
 .btn.show.add {
   position: absolute;
-  top: 350px;
-  left: 130px;
+  top: 100px;
+  left: 20px;
 }
 
 .btn.show.remove {
   position: absolute;
-  right: 125px;
+  right: 5px;
 }
 
 .btn.show {
