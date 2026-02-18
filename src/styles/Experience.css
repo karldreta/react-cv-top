@@ -7,11 +7,12 @@
     justify-content: space-between;
   }
 
-  .sectLvl2 > h3 {
-    margin-right: 40px;
-    font-size: 36px;
+.sectLvl2 > h3 {
+  margin-right: 60px;
+  margin-left: 20px;
+  font-size: 36px;
 
-  }
+}
 
 .jobDiv {
   border: 1px solid blue;
@@ -37,12 +38,50 @@
 
 .jobDiv ul {
   margin: 0px 20px;
+  margin-top: -10px;
   padding: 5px 10px;
 }
 
 .jobDiv ul li {
   font-size: 12px;
+  list-style: none;
 }
+
+/* Inputs */
+
+input {
+  border: 1px solid green;
+  width: fit-content;
+  margin-left: 5px;
+}
+
+input[placeholder="Company Name"] {
+  margin: 0px;
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 400px;
+}
+
+input[placeholder="Date Start"], input[placeholder="Date End"] {
+  padding: 2px 5px;
+  width: 100px;
+}
+
+input[placeholder="Job Description"] {
+  font-size: 16px;
+  width: 250px;
+}
+
+input[placeholder="Task"] {
+  margin: 2px 0px;
+  font-size: 12px;
+  width: 600px;
+}
+
+
+
+/* Buttons */
 
 .jobDiv button {
   position: absolute;
