@@ -36,7 +36,7 @@ export default function HobbiesSection() {
 
     return (
         <>
-            <button onClick={handleButtonClick}>{isEditing ? "Submit Edit" : "Edit"}</button>
+            <button className={"editHobbyBtn"} onClick={handleButtonClick}>{isEditing ? "Submit Edit" : "Edit Hobby"}</button>
             <section className="sectLvl5">
                 <h3>Hobbies</h3>
                 {hobbies.map(hobby => (

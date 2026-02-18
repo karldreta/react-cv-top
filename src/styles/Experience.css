@@ -1,6 +1,10 @@
+
 .sectLvl2 {
   position: relative;
-    border: 1px solid #ff0000;
+    /* border: 1px solid #ff0000; */
+    /* border: 2px solid black; */
+    box-shadow: 1px 0px 10px 1px black;
+
     flex-direction: column;
     font-family: Arial, system-ui, Helvetica, sans-serif;
     display: flex;
@@ -15,8 +19,14 @@
 
 }
 
+.experienceDiv {
+  /* border-left: 2px solid black; */
+  box-shadow: 1px 1px 10px 1px black;
+}
+
 .jobDiv {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  /* border-bottom: 1px solid black; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -51,7 +61,7 @@
 /* Inputs */
 
 input {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: fit-content;
   margin-left: 5px;
 }

@@ -15,7 +15,9 @@ createRoot(document.getElementById('root')).render(
     <InfoSection/>
     <Experience/>
     <Education/>
+   <div className='additionalSectionDiv'>
     <SkillsSection/>
     <HobbiesSection/>
+   </div>
   </StrictMode>,
 )

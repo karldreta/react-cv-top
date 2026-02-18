@@ -36,7 +36,7 @@ export default function SkillsSection () {
     
     return (
         <>
-            <button onClick={handleButtonClick}>{isEditing ? "Submit Edit" : "Edit"}</button>
+            <button className={"editSkillsBtn"} onClick={handleButtonClick}>{isEditing ? "Submit Edit" : "Edit Skills"}</button>
             <section className="sectLvl4">
                 <h3>Skills</h3>
                 {skills.map(skill => (                    
@@ -48,8 +48,8 @@ export default function SkillsSection () {
                             </div>
                         ) 
                         :(
-                            <div>
-                                <h4>{skill.label}</h4>
+                            <div className="skillDiv">
+                                <h4>{skill.label + ":"}</h4>
                                 <h5>{skill.value}</h5>
                             </div>
                         )
