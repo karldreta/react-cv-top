@@ -17,6 +17,7 @@ body {
 
 body button {
   position: absolute;
+  z-index: 100;
 }
 
 h3 {

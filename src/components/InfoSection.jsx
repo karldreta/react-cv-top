@@ -5,7 +5,7 @@ export default function InfoSection() {
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
     fullName: "Karl James Reta",
-    title: "FullStack Developer",
+    title: "Fullstack Developer",
     contactNum: "+63 961-923-6505",
     emailAdd: "karldreta@gmail.com",
     ghProfile: "github.com/karldreta",
