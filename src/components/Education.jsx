@@ -64,7 +64,6 @@ export default function Education() {
                   {edu.school + " | "} <span>{edu.endYear}</span>{" "}
                 </h4>
                 <h5>{edu.course}</h5>
-                <hr />
               </div>
             )}
           </div>

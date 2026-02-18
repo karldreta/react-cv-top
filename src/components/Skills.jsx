@@ -50,19 +50,21 @@ export default function SkillsSection() {
         {skills.map((skill) => (
           <div key={skill.id}>
             {isEditing ? (
-              <div>
+              <div className="skillDiv">
                 <input
+                placeholder={"Category"}
                   value={skill.label}
                   onChange={(e) => updateSkillLabel(skill.id, e.target.value)}
                 />
                 <input
+                placeholder={"Strengths"}
                   value={skill.value}
                   onChange={(e) => updateSkills(skill.id, e.target.value)}
                 />
               </div>
             ) : (
               <div className="skillDiv">
-                <h4>{skill.label + ":"}</h4>
+                <h4>{skill.label}</h4>
                 <h5>{skill.value}</h5>
               </div>
             )}

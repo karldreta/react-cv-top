@@ -29,13 +29,14 @@ h5 {
 }
 
 .additionalSectionDiv {
-  border: 1px solid red;
+  box-shadow: 1px 0px 10px 1px black;
   margin-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   gap: 50px;
+  padding-bottom: 30px;
 }
 
 .additionalSectionDiv .skillDiv * {
@@ -52,19 +53,24 @@ h5 {
 }
 
 .additionalSectionDiv .skillDiv {
-  margin: 10px 20px 20px;
-  margin-right: 20px;
+  margin: 10px 20px 10px;
   display: flex;
-  gap: 20px;
-  margin-top: 10px;
+  
 }
 
 .additionalSectionDiv h3 {
   margin: 20px 20px;
 }
 
-.additionalSectionDiv .skillDiv h5 {
+
+.additionalSectionDiv h4, .additionalSectionDiv input[placeholder="Category"] {
+  font-size: 20px;
+  width: 50%;
+}
+
+.additionalSectionDiv .skillDiv h5,  input[placeholder="Strengths"] {
   margin-top: 2px;
+  font-size: 14px;
 }
 
 .additionalSectionDiv .sectLvl4,
@@ -72,15 +78,8 @@ h5 {
   width: 50%;
 }
 
-.additionalSectionDiv .sectLvl5 {
-}
-
 .additionalSectionDiv h5,
 .additionalSectionDiv .sectLvl5 input {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 0px 20px;
   font-size: 16px;
-}
-
-.additionalSectionDiv .sectLvl5 input {
-  margin: 10px 0px 10px 0px;
 }
