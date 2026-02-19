@@ -11,14 +11,14 @@ import HobbiesSection from "./components/Hobbies";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-   <div className="blurEffectDiv">
-   <InfoSection />
-    <Experience />
-    <Education />
-    <div className="additionalSectionDiv">
-      <SkillsSection />
-      <HobbiesSection />
+    <div className="blurEffectDiv">
+      <InfoSection />
+      <Experience />
+      <Education />
+      <div className="additionalSectionDiv">
+        <SkillsSection />
+        <HobbiesSection />
+      </div>
     </div>
-   </div>
   </StrictMode>,
 );

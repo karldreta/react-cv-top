@@ -1,16 +1,38 @@
-# React + Vite
+# React CV Builder from The Odin Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- Dynamic editing of CV sections:
+  - Personal Information
+  - Work Experience
+  - Education
+  - Skills
+  - Hobbies
+- Toggle between Edit Mode and View Mode
+- Real-time UI updates using React state
+- Dynamic addition and removal of list items (e.g. tasks, skills)
+- Nested data updates (e.g. tasks inside work experience)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Concepts I Learned
 
-## Expanding the ESLint configuration
+- `useState` for managing component state
+- Controlled Components for handling form inputs
+- Conditional Rendering for edit/view modes
+- Rendering Lists with `.map()`
+- Immutability in state update
+- Updating nested state structures
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future Improvements
+
+- Export as downloadable PDF
+- Form validation
+- Drag-and-drop reordering of sections
+- Theme customization
+- Persistent data using localStorage

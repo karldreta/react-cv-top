@@ -87,7 +87,7 @@ export default function Experience() {
           task: "Tracking down order details and providing top-notch resolution.",
         },
       ],
-    }
+    },
   ]);
 
   function handleButtonClick() {

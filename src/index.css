@@ -42,7 +42,10 @@ h5 {
 }
 
 .additionalSectionDiv {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;  margin-bottom: 100px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
+  margin-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -67,20 +70,20 @@ h5 {
 .additionalSectionDiv .skillDiv {
   margin: 10px 20px 10px;
   display: flex;
-  
 }
 
 .additionalSectionDiv h3 {
   margin: 20px 20px;
 }
 
-
-.additionalSectionDiv h4, .additionalSectionDiv input[placeholder="Category"] {
+.additionalSectionDiv h4,
+.additionalSectionDiv input[placeholder="Category"] {
   font-size: 20px;
   width: 50%;
 }
 
-.additionalSectionDiv .skillDiv h5,  input[placeholder="Strengths"] {
+.additionalSectionDiv .skillDiv h5,
+input[placeholder="Strengths"] {
   margin-top: 2px;
   font-size: 14px;
 }

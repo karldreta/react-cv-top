@@ -57,9 +57,7 @@ export default function InfoSection() {
                 />
               </li>
             ) : (
-              <li className="phone">
-                {profile.contactNum}
-              </li>
+              <li className="phone">{profile.contactNum}</li>
             )}
             {isEditing ? (
               <li className="email">
@@ -81,9 +79,9 @@ export default function InfoSection() {
             ) : (
               <li className="gitHub">
                 <a href="https://github.com/karldreta" target="blank">
-                {profile.ghProfile}
+                  {profile.ghProfile}
                 </a>
-                </li>
+              </li>
             )}
             {isEditing ? (
               <li className="location">

@@ -52,12 +52,12 @@ export default function SkillsSection() {
             {isEditing ? (
               <div className="skillDiv">
                 <input
-                placeholder={"Category"}
+                  placeholder={"Category"}
                   value={skill.label}
                   onChange={(e) => updateSkillLabel(skill.id, e.target.value)}
                 />
                 <input
-                placeholder={"Strengths"}
+                  placeholder={"Strengths"}
                   value={skill.value}
                   onChange={(e) => updateSkills(skill.id, e.target.value)}
                 />
