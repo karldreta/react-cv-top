@@ -17,7 +17,6 @@ input {
   border: none;
   margin: 0;
   padding: 0;
-  background-color: white;
   outline: none;
   font-style: italic;
 }
@@ -30,6 +29,11 @@ h1 {
   height: 56px;
   font-size: 52px;
   font-weight: bold;
+}
+
+input#fullName, input#title {
+  color: white;
+  background-color: inherit;
 }
 
 h1,
@@ -49,7 +53,7 @@ h2 {
 
 .nameDiv {
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   padding: 20px;
   padding-left: 0px;
   width: 600px;
@@ -97,7 +101,7 @@ li.phone::before,
 input[className="phone"]::before {
   content: url("../src/assets/phone.svg");
   padding-top: 5px;
-  margin-left: -5px;
+  margin-left: 2px;
 }
 
 li.email {
