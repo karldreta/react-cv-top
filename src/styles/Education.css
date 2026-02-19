@@ -1,0 +1,29 @@
+.sectLvl3 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sectLvl3 h3 {
+    margin-left: 20px;
+}
+
+.schoolDiv {
+    width: 800px;
+}
+
+.schoolDiv h4, input[placeholder="School"], input[placeholder="End Year"] {
+    margin: 0px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.schoolDiv h5, input[placeholder="Course"] {
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+

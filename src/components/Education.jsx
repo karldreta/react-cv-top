@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Education.css"
 
 export default function Education() {
   const [isEditing, setIsEditing] = useState(false);
@@ -33,7 +34,7 @@ export default function Education() {
         {education.map((edu) => (
           <div key={edu.id}>
             {isEditing ? (
-              <div>
+              <div className="schoolDiv">
                 {" "}
                 <input
                   placeholder={"School"}
@@ -59,7 +60,7 @@ export default function Education() {
                 />
               </div>
             ) : (
-              <div>
+              <div className="schoolDiv">
                 <h4>
                   {edu.school + " | "} <span>{edu.endYear}</span>{" "}
                 </h4>
