@@ -6,8 +6,8 @@ export default function InfoSection() {
   const [profile, setProfile] = useState({
     fullName: "Karl James Reta",
     title: "Fullstack Developer",
-    contactNum: "+63 961-923-6505",
-    emailAdd: "karldreta@gmail.com",
+    contactNum: "+63 961-923-7582",
+    emailAdd: "gordel.escher.bach@proton.me",
     ghProfile: "github.com/karldreta",
     location: "Philippines",
   });

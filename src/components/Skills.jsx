@@ -16,7 +16,7 @@ export default function SkillsSection() {
     {
       id: crypto.randomUUID(),
       label: "Technical",
-      value: " HTML, CSS, JavaScript, Git, Node, ES6, Webpack, npm",
+      value: " HTML, CSS, JavaScript, React, Git, Node, ES6, Webpack, npm",
     },
   ]);
 

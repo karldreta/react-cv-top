@@ -6,43 +6,22 @@ export default function Experience() {
   const [workHistory, setWorkHistory] = useState([
     {
       id: crypto.randomUUID(),
-      companyName: "Awesome OS",
-      dateStart: "Oct 2021",
-      dateEnd: "Feb 2022",
-      description: "Service (Retail Chain)",
+      companyName: "GoGoGrandparent",
+      dateStart: "Sep 2024",
+      dateEnd: "Present",
+      description: "(Transportation Service for Seniors)",
       tasks: [
         {
           taskId: crypto.randomUUID(),
-          task: "Providing pre-drafted email responses to client's concerns.",
+          task: "Handling inbound calls to assist elderly clients in booking a ride.",
         },
         {
           taskId: crypto.randomUUID(),
-          task: "Processing store orders and delivery for clients'.",
+          task: "Informing and registering first-time callers about the service.",
         },
         {
           taskId: crypto.randomUUID(),
-          task: "Tracking down order details and providing top-notch resolution.",
-        },
-      ],
-    },
-    {
-      id: crypto.randomUUID(),
-      companyName: "Alorica",
-      dateStart: "May 2022",
-      dateEnd: "May 2023",
-      description: "Sales & Service (Hotel Reservations)",
-      tasks: [
-        {
-          taskId: crypto.randomUUID(),
-          task: "Handling inbound calls to assist guests in booking room reservations for hotels or resorts through a third-party affiliated website.",
-        },
-        {
-          taskId: crypto.randomUUID(),
-          task: "Providing alternative locations with the requested amenities in case rooms are fully booked.",
-        },
-        {
-          taskId: crypto.randomUUID(),
-          task: "All successful reservations are considered sales.",
+          task: "Providing feedback on the dashboard process and call flow scripts to management for better call procedure.",
         },
       ],
     },
@@ -51,7 +30,7 @@ export default function Experience() {
       companyName: "VXI Global Solutions",
       dateStart: "June 2022",
       dateEnd: "Sep 2024",
-      description: "Sales & Service (Digital Satellite Service)",
+      description: "(Digital Satellite Service)",
       tasks: [
         {
           taskId: crypto.randomUUID(),
@@ -69,25 +48,46 @@ export default function Experience() {
     },
     {
       id: crypto.randomUUID(),
-      companyName: "GoGoGrandparent",
-      dateStart: "Sep 2024",
-      dateEnd: "Present",
-      description: "Transportation Service for Seniors",
+      companyName: "Alorica",
+      dateStart: "May 2022",
+      dateEnd: "May 2023",
+      description: "(Hotel Reservations)",
       tasks: [
         {
           taskId: crypto.randomUUID(),
-          task: "Handling inbound calls to assist elderly clients in booking a ride.",
+          task: "Handling inbound calls to assist guests in booking room reservations for hotels or resorts through a third-party affiliated website.",
         },
         {
           taskId: crypto.randomUUID(),
-          task: "Informing and registering first-time callers about the service.",
+          task: "Providing alternative locations with the requested amenities in case rooms are fully booked.",
         },
         {
           taskId: crypto.randomUUID(),
-          task: "Providing feedback on the dashboard process and call flow scripts to management for better call procedure.",
+          task: "All successful reservations are considered sales.",
         },
       ],
     },
+    {
+      id: crypto.randomUUID(),
+      companyName: "Awesome OS",
+      dateStart: "Oct 2021",
+      dateEnd: "Feb 2022",
+      description: "(Retail Chain)",
+      tasks: [
+        {
+          taskId: crypto.randomUUID(),
+          task: "Providing pre-drafted email responses to client's concerns.",
+        },
+        {
+          taskId: crypto.randomUUID(),
+          task: "Processing store orders and delivery for clients'.",
+        },
+        {
+          taskId: crypto.randomUUID(),
+          task: "Tracking down order details and providing top-notch resolution.",
+        },
+      ],
+    }
   ]);
 
   function handleButtonClick() {

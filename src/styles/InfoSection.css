@@ -2,7 +2,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   box-sizing: border-box;
   position: relative;
-  margin-top: 100px;
+  /* margin-top: 50px; */
   font-family: Arial, system-ui, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
@@ -139,5 +139,4 @@ li.location::before, input[className="location"]::before {
 
 .editInfoBtn {
   position: absolute;
-  top: 100px;
 }

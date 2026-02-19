@@ -9,20 +9,27 @@
 body {
   position: relative;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 320px; */
+  /* height: 100vh; */
+}
+
+.blurEffectDiv {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  scale: 85%;
 }
 
 body button {
   position: absolute;
   z-index: 100;
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: white;
   padding: 5px;
   font-size: 12px;
   font-weight: bold;
+  border-radius: 2px;
 }
 
 h3 {
