@@ -22,7 +22,7 @@ export default function InfoSection() {
 
   return (
     <>
-      <button onClick={handleButtonClick}>
+      <button onClick={handleButtonClick} className="editInfoBtn">
         {isEditing ? "Submit Edit" : "Edit"}
       </button>
       <section className="sectLvl1">
