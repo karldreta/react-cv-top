@@ -99,7 +99,7 @@ li.phone {
 
 li.phone::before,
 input[className="phone"]::before {
-  content: url("../src/assets/phone.svg");
+  content: url("../assets/phone.svg");
   padding-top: 5px;
   margin-left: 2px;
 }
